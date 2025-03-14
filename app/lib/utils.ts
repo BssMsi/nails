@@ -313,7 +313,8 @@ export const NAILS_DATA = {
       state: "Digital State",
       zip: "10101",
       country: "Republic of Innovation",
-      mapCoordinates: { lat: 40.7128, lng: -74.0060 }
+      mapCoordinates: { lat: 13.0296807, lng: 77.5899125 },
+      href: "https://maps.app.goo.gl/LBGHpeCr3roENf25A",
     },
     alternativeAddress: {
       line1: "NAILS Research Center",
@@ -322,7 +323,8 @@ export const NAILS_DATA = {
       state: "Eco State",
       zip: "20202",
       country: "Republic of Innovation",
-      mapCoordinates: { lat: 37.7749, lng: -122.4194 }
+      mapCoordinates: { lat: 12.88609082360481, lng: 77.56269843173627 },
+      href: "https://maps.app.goo.gl/vJDFUXDKehWcaSLn8",
     },
     phone: "+1 (555) 123-4567",
     email: "info@nails-ngo.org"

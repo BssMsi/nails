@@ -44,7 +44,8 @@ const ContactUs = () => {
             <GoogleMap
               lat={NAILS_DATA.contact.registeredAddress.mapCoordinates.lat}
               lng={NAILS_DATA.contact.registeredAddress.mapCoordinates.lng}
-              zoom={15}
+              zoom={14} // Reduced zoom level for better visibility
+              href={NAILS_DATA.contact.registeredAddress.href}
             />
           </div>
         </motion.div>
@@ -75,7 +76,7 @@ const ContactUs = () => {
             <GoogleMap
               lat={NAILS_DATA.contact.alternativeAddress.mapCoordinates.lat}
               lng={NAILS_DATA.contact.alternativeAddress.mapCoordinates.lng}
-              zoom={15}
+              zoom={14} // Reduced zoom level for better visibility
             />
           </div>
         </motion.div>

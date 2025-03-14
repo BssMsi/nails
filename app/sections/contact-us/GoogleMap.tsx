@@ -6,17 +6,20 @@ import { cn } from "../../lib/utils";
 export default function GoogleMap({
   lat,
   lng,
-  zoom = 14,
+  zoom = 14, // Default zoom level reduced for better visibility
   className,
+  href,
 }: {
   lat: number;
   lng: number;
   zoom?: number;
   className?: string;
+  href?: string;
 }) {
   // Create a Google Maps URL that opens in a new tab when clicked
   // This approach doesn't require an API key
-  const googleMapsUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus`;
+  // Added marker parameter to show a pin at the target coordinates
+  const googleMapsUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus&z=${zoom}&markers=color:red%7C${lat},${lng}`;
   
   // Alternative direct link to Google Maps
   const directLink = `https://www.google.com/maps?q=${lat},${lng}&z=${zoom}`;
@@ -38,7 +41,7 @@ export default function GoogleMap({
       {/* Fallback in case the iframe doesn't load properly */}
       <div className="absolute bottom-2 right-2 z-10">
         <a 
-          href={directLink}
+          href={href || directLink}
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs bg-white dark:bg-gray-800 px-2 py-1 rounded shadow-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
