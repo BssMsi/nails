@@ -40,10 +40,12 @@ const ContactUs = () => {
               <p>{NAILS_DATA.contact.registeredAddress.country}</p>
             </address>
           </div>
-          <div className="h-64">
+          <div className="h-64 relative">
             <GoogleMap
               lat={NAILS_DATA.contact.registeredAddress.mapCoordinates.lat}
               lng={NAILS_DATA.contact.registeredAddress.mapCoordinates.lng}
+              zoom={14} // Reduced zoom level for better visibility
+              href={NAILS_DATA.contact.registeredAddress.href}
             />
           </div>
         </motion.div>
@@ -70,10 +72,11 @@ const ContactUs = () => {
               <p>{NAILS_DATA.contact.alternativeAddress.country}</p>
             </address>
           </div>
-          <div className="h-64">
+          <div className="h-64 relative">
             <GoogleMap
               lat={NAILS_DATA.contact.alternativeAddress.mapCoordinates.lat}
               lng={NAILS_DATA.contact.alternativeAddress.mapCoordinates.lng}
+              zoom={14} // Reduced zoom level for better visibility
             />
           </div>
         </motion.div>

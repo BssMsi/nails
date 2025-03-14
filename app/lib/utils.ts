@@ -318,7 +318,8 @@ export const NAILS_DATA = {
       state: "Karnataka",
       zip: "560024",
       country: "India",
-      mapCoordinates: { lat: 40.7128, lng: -74.0060 }
+      mapCoordinates: { lat: 13.0296807, lng: 77.5899125 },
+      href: "https://maps.app.goo.gl/LBGHpeCr3roENf25A",
     },
     alternativeAddress: {
       line1: "34034, Prestige Falcon City",
@@ -327,7 +328,8 @@ export const NAILS_DATA = {
       state: "Karnataka",
       zip: "560062",
       country: "India",
-      mapCoordinates: { lat: 37.7749, lng: -122.4194 }
+      mapCoordinates: { lat: 12.88609082360481, lng: 77.56269843173627 },
+      href: "https://maps.app.goo.gl/vJDFUXDKehWcaSLn8",
     },
     phone: "+91 9700400325",
     email: "info@nails.org.in"
