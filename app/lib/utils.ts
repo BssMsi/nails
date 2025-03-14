@@ -7,13 +7,18 @@ export function cn(...inputs: ClassValue[]) {
 
 export const NAILS_DATA = {
   organization: {
-    purpose: "NAILS (Network for AI, Legal and sustainable solutions society) is dedicated to promoting responsible AI development, legal frameworks, and sustainable solutions for societal challenges.",
+    purpose: "The Network for AI, Legal, and Sustainable Solutions Society stands as a pioneering platform that brings together visionary professionals, insightful researchers, and influential thought leaders, all united in the mission to advance artificial intelligence, enhance legal frameworks, and promote sustainable solutions. Our society cultivates an environment of collaboration, innovation, and knowledge sharing, actively addressing the pressing challenges that confront us in these critical areas.As a registered society, we are dedicated to bridging the gaps between technology, policy, and sustainability by forging meaningful connections with institutions, industries, and communities. Our diverse membership comprises experts in AI, legal research, environmental governance, and corporate social responsibility, all passionately committed to driving positive change and making a lasting impact on society. Join us as we work together to create a better future for all.",
     objectives: [
-      "To promote research and development in AI technologies that benefit society",
-      "To advocate for legal frameworks that ensure ethical AI deployment",
-      "To develop sustainable solutions for environmental and social challenges",
-      "To bridge the gap between technology, law, and sustainability",
-      "To educate and raise awareness about responsible AI use"
+      "Promoting Research & Development – Encouraging innovation and research in AI, legal studies, and sustainability to enhance the quality of life and drive positive societal impact. ",
+      "Knowledge Dissemination – Collecting, publishing, and sharing information through books, journals, documentation centers, and digital platforms to create awareness and foster education.",
+      "Capacity Building & Skill Development – Organizing training sessions, seminars, conferences, and workshops to enhance knowledge and expertise in AI, law, and sustainability.",
+      "To bridge the gap between technology, law, and sustainability Legal & Regulatory Services – Conducting research and providing guidance on environmental and legal compliance to support ethical and responsible AI deployment.",
+      "Supporting Corporate Social Responsibility (CSR) Initiatives – Assisting organizations in aligning their CSR efforts with sustainability goals and environmental responsibility.",
+      "Monitoring & Evaluation Services – Offering expertise in environmental impact assessments, carbon footprint analysis, and waste management strategies.",
+      "ESG (Environmental, Social, and Governance) Guidance – Providing advisory services, training, and awareness programs to support sustainable business practices.",
+      " Project Management & Consulting – Acting as a Project Management Cell to oversee and coordinate initiatives in AI, legal, and sustainability domains.",
+      " Encouraging Ethical AI & Emerging Technologies – Engaging in research and discussions on the ethical use of AI, IoT, and related technologies for sustainable development.",
+      "Awarding Scholarships & Grants – Recognizing and supporting scientists, engineers, entrepreneurs, and professionals who contribute to AI, legal, and sustainability advancements.",
     ],
     scopeOfWork: [
       "AI Ethics and Governance",
@@ -26,57 +31,57 @@ export const NAILS_DATA = {
   },
   foundingMembers: [
     {
-      name: "Dr. Aisha Johnson",
-      role: "Chairperson",
-      bio: "AI Ethics Researcher with 15 years of experience in developing ethical frameworks for AI deployment",
+      name: "Shri. Salikeri Ramachandra Vambally",
+      role: "President",
+      bio: "Retired Additional Controller State Accounts Department, Government of Karnataka",
       image: "/images/member1.jpg"
     },
     {
-      name: "Prof. Michael Chen",
-      role: "Vice Chairperson",
-      bio: "Legal scholar specializing in technology law and digital rights",
+      name: "Shri. Bharath Srinivas Shroff",
+      role: "Vice President",
+      bio: "Software Engineer",
       image: "/images/member2.jpg"
     },
     {
-      name: "Dr. Sarah Patel",
+      name: "Smt. Jayashree Maiya",
       role: "Secretary",
-      bio: "Sustainability expert with focus on technology-driven environmental solutions",
+      bio: "Programme Associate",
       image: "/images/member3.jpg"
     },
     {
-      name: "James Wilson",
-      role: "Treasurer",
-      bio: "Financial technology specialist with expertise in ethical investment",
+      name: "Ms. Bhargavi Srinivas Shroff",
+      role: "Joint-Secretary",
+      bio: "Law Student",
       image: "/images/member4.jpg"
     },
     {
-      name: "Dr. Elena Rodriguez",
-      role: "Executive Member",
-      bio: "Computer scientist specializing in explainable AI and algorithmic transparency",
+      name: "Smt. Annapoorna Shroff",
+      role: "Treasurer",
+      bio: "Consultant Former IT Professional with Tech Mahindra, Ampersand",
       image: "/images/member5.jpg"
     },
     {
-      name: "Robert Kim",
+      name: "Shri. Srinivas Nagesha Rao Shroff, PhD",
       role: "Executive Member",
-      bio: "Policy expert with background in international technology governance",
+      bio: "Formal CEO of REC-Delhi",
       image: "/images/member6.jpg"
     },
     {
-      name: "Dr. Lisa Okafor",
+      name: "Smt. Lalitha Varambally",
       role: "Executive Member",
-      bio: "Data ethics specialist focusing on bias mitigation in AI systems",
+      bio: "House Maker",
       image: "/images/member7.jpg"
     },
     {
-      name: "Thomas Müller",
+      name: "Smt. Srimathi H N Varambally",
       role: "Executive Member",
-      bio: "Environmental engineer working on AI applications for climate change solutions",
+      bio: "House Maker",
       image: "/images/member8.jpg"
     },
     {
-      name: "Dr. Priya Singh",
+      name: "Ms. Neha Maiya",
       role: "Executive Member",
-      bio: "Digital rights advocate with expertise in privacy-preserving technologies",
+      bio: "AI Engineering Student",
       image: "/images/member9.jpg"
     }
   ],
@@ -307,26 +312,26 @@ export const NAILS_DATA = {
   },
   contact: {
     registeredAddress: {
-      line1: "NAILS Headquarters",
-      line2: "123 Innovation Avenue",
-      city: "Tech City",
-      state: "Digital State",
-      zip: "10101",
-      country: "Republic of Innovation",
+      line1: "93, Anushree Enclave",
+      line2: "2nd Floor,1st main, SBM Colony, ICICI ATM, Ananda Nagar ",
+      city: "Bangalore",
+      state: "Karnataka",
+      zip: "560024",
+      country: "India",
       mapCoordinates: { lat: 13.0296807, lng: 77.5899125 },
       href: "https://maps.app.goo.gl/LBGHpeCr3roENf25A",
     },
     alternativeAddress: {
-      line1: "NAILS Research Center",
-      line2: "456 Sustainability Boulevard",
-      city: "Green Valley",
-      state: "Eco State",
-      zip: "20202",
-      country: "Republic of Innovation",
+      line1: "34034, Prestige Falcon City",
+      line2: "Kanakapura Main Rd, Anjanadri Layout, Konnakunte",
+      city: "Bangalore",
+      state: "Karnataka",
+      zip: "560062",
+      country: "India",
       mapCoordinates: { lat: 12.88609082360481, lng: 77.56269843173627 },
       href: "https://maps.app.goo.gl/vJDFUXDKehWcaSLn8",
     },
-    phone: "+1 (555) 123-4567",
-    email: "info@nails-ngo.org"
+    phone: "+91 9700400325",
+    email: "info@nails.org.in"
   }
 };
