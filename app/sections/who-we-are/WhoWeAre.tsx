@@ -4,12 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
 import SvgMaskEffect from "./SvgMaskEffect";
-import TextGenerateEffect from "./TextGenerateEffect";
 import TextRevealCard from "./TextRevealCard";
 import AppleCardsCarousel from "./AppleCardsCarousel";
 import FocusCards from "./FocusCards";
 import ParallaxScroll from "./ParallaxScroll";
 import { TeamCarousel } from "@/app/components/TeamCarousel";
+import { Objectives } from "@/app/components/Objectives";
+import { AboutSociety } from "@/app/components/AboutSociety";
 
 const WhoWeAre = () => {
   return (
@@ -48,9 +49,7 @@ const WhoWeAre = () => {
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 text-center">Objectives</h3>
           <div className="max-w-4xl mx-auto">
-            <TextGenerateEffect
-              words={NAILS_DATA.organization.objectives.join(" • ")}
-            />
+            <Objectives objectives={NAILS_DATA.organization.objectives} />
           </div>
         </div>
 
@@ -58,9 +57,7 @@ const WhoWeAre = () => {
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 text-center">About Society</h3>
           <div className="max-w-4xl mx-auto">
-            <TextGenerateEffect
-              words={NAILS_DATA.organization.aboutSociety}
-            />
+            <AboutSociety about={NAILS_DATA.organization.aboutSociety} />
           </div>
         </div>
 

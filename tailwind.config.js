@@ -15,6 +15,7 @@ module.exports = {
         "meteor-effect": "meteor 5s linear infinite",
         shimmer: "shimmer 2s linear infinite",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "fade-in": "fade-in 0.5s ease-out forwards",
       },
       keyframes: {
         meteor: {
@@ -37,6 +38,10 @@ module.exports = {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        "fade-in": {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
     },

@@ -20,7 +20,11 @@ export const NAILS_DATA = {
       " Encouraging Ethical AI & Emerging Technologies – Engaging in research and discussions on the ethical use of AI, IoT, and related technologies for sustainable development.",
       "Awarding Scholarships & Grants – Recognizing and supporting scientists, engineers, entrepreneurs, and professionals who contribute to AI, legal, and sustainability advancements.",
     ],
-    aboutSociety: "The Network for AI, Legal, and Sustainable Solutions Society (NAILS) is a registered society dedicated to advancing artificial intelligence, legal frameworks, and sustainable solutions. Our society brings together professionals, researchers, and thought leaders to drive positive change and make a lasting impact on society. Join us as we work together to create a better future for all.",
+    aboutSociety: [
+      "The Network for AI, Legal, and Sustainable Solutions Society is headquartered in Bangalore, Karnataka, and operates under the Karnataka Societies Registration Act, 1960. Our society is governed by an executive committee comprising experts and professionals from diverse fields.",
+      "We believe in an interdisciplinary approach to problem-solving and aim to foster collaborations that drive ethical AI development, legal clarity, and sustainability best practices. Our initiatives focus on education, policy advocacy, and implementation of impactful projects.",
+      "Join us in our mission to create a more informed, responsible, and sustainable future through AI, legal innovation, and environmental solutions.",
+    ],
     scopeOfWork: [
       "AI Ethics and Governance",
       "Legal Tech Solutions",
