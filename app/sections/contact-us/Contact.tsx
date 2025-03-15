@@ -2,7 +2,7 @@
 
 import React from "react";
 import { NAILS_DATA } from "../../lib/utils";
-import Map from "../../components/ui/GoogleMap";
+import GoogleMap from "../../components/ui/GoogleMap";
 import { HiOutlineOfficeBuilding, HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 
 export const Contact = () => {
@@ -95,7 +95,7 @@ export const Contact = () => {
           </div>
 
           <div className="h-full">
-            <Map center={center} markers={markers} />
+            <GoogleMap center={center} markers={markers} />
           </div>
         </div>
       </div>

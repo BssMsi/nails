@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import React, { useState, useCallback } from 'react';
+import { GoogleMap as GoogleMapComponent, LoadScript, Marker } from '@react-google-maps/api';
 
 interface MapProps {
   center: {
@@ -21,81 +21,80 @@ const mapStyles = {
   borderRadius: "1rem",
 };
 
-const Map = ({ center, markers }: MapProps) => {
+const GoogleMapWrapper = ({ center, markers }: MapProps) => {
   const [loadError, setLoadError] = useState(false);
+  const [map, setMap] = useState<google.maps.Map | null>(null);
+
+  const onLoad = useCallback((map: google.maps.Map) => {
+    const bounds = new window.google.maps.LatLngBounds();
+    markers.forEach(marker => {
+      bounds.extend({ lat: marker.lat, lng: marker.lng });
+    });
+    map.fitBounds(bounds, 60);
+    setMap(map);
+  }, [markers]);
+
+  const onUnmount = useCallback(() => {
+    setMap(null);
+  }, []);
 
   const mapOptions = {
-    zoom: 12,
-    mapTypeControl: true,
-    streetViewControl: true,
-    fullscreenControl: true,
+    zoom: 11,
+    mapTypeControl: false,
+    streetViewControl: false,
+    fullscreenControl: false,
     zoomControl: true,
     styles: [
       {
         featureType: "all",
         elementType: "labels.text.fill",
-        stylers: [{ color: "#ffffff" }],
+        stylers: [{ color: "#ffffff" }]
       },
       {
         featureType: "all",
         elementType: "labels.text.stroke",
-        stylers: [{ color: "#000000" }, { lightness: 13 }],
+        stylers: [{ color: "#000000" }]
+      },
+      {
+        featureType: "all",
+        elementType: "labels.icon",
+        stylers: [{ visibility: "off" }]
       },
       {
         featureType: "administrative",
-        elementType: "geometry.fill",
-        stylers: [{ color: "#000000" }],
-      },
-      {
-        featureType: "administrative",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#144b53" }, { lightness: 14 }, { weight: 1.4 }],
+        elementType: "geometry",
+        stylers: [{ color: "#000000" }, { weight: 0.5 }]
       },
       {
         featureType: "landscape",
         elementType: "all",
-        stylers: [{ color: "#08304b" }],
+        stylers: [{ color: "#08304b" }]
       },
       {
         featureType: "poi",
+        elementType: "all",
+        stylers: [{ visibility: "off" }]
+      },
+      {
+        featureType: "road",
         elementType: "geometry",
-        stylers: [{ color: "#0c4152" }, { lightness: 5 }],
+        stylers: [{ color: "#000000" }, { lightness: 20 }]
       },
       {
-        featureType: "road.highway",
-        elementType: "geometry.fill",
-        stylers: [{ color: "#000000" }],
-      },
-      {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#0b434f" }, { lightness: 25 }],
-      },
-      {
-        featureType: "road.arterial",
-        elementType: "geometry.fill",
-        stylers: [{ color: "#000000" }],
-      },
-      {
-        featureType: "road.arterial",
-        elementType: "geometry.stroke",
-        stylers: [{ color: "#0b3d51" }, { lightness: 16 }],
-      },
-      {
-        featureType: "road.local",
-        elementType: "geometry",
-        stylers: [{ color: "#000000" }],
+        featureType: "road",
+        elementType: "labels",
+        stylers: [{ visibility: "simplified" }]
       },
       {
         featureType: "transit",
         elementType: "all",
-        stylers: [{ color: "#146474" }],
+        stylers: [{ visibility: "off" }]
       },
       {
         featureType: "water",
         elementType: "all",
-        stylers: [{ color: "#021019" }],
-      },
+        stylers: [{ color: "#021019" }, { lightness: 10 }]
+      }
     ],
   };
 
@@ -129,11 +128,13 @@ const Map = ({ center, markers }: MapProps) => {
       googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
       onError={() => setLoadError(true)}
     >
-      <GoogleMap
+      <GoogleMapComponent
         mapContainerStyle={mapStyles}
         zoom={mapOptions.zoom}
         center={center}
         options={mapOptions}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
       >
         {markers.map((marker, index) => (
           <Marker
@@ -142,9 +143,9 @@ const Map = ({ center, markers }: MapProps) => {
             title={marker.title}
           />
         ))}
-      </GoogleMap>
+      </GoogleMapComponent>
     </LoadScript>
   );
 };
 
-export default Map; 
+export default GoogleMapWrapper; 

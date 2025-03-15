@@ -45,7 +45,7 @@ const WhatWeDo = () => {
           viewport={{ once: true }}
           className="text-3xl font-bold text-center mb-12"
         >
-          National
+          National Projects
         </motion.h2>
         <Timeline items={NAILS_DATA.nationalProjects} />
       </div>
@@ -59,7 +59,7 @@ const WhatWeDo = () => {
           viewport={{ once: true }}
           className="text-3xl font-bold text-center mb-12"
         >
-          International
+            Upcoming Projects
         </motion.h2>
         <Timeline items={NAILS_DATA.upcomingProjects} />
       </div>
