@@ -169,42 +169,30 @@ export const NAILS_DATA = {
   ],
   nationalProjects: [
     {
-      title: "AI Ethics Framework for Public Sector",
-      description: "Developed comprehensive ethical guidelines for AI deployment in government services",
-      year: "2022",
-      impact: "Adopted by 3 state governments, improving algorithmic transparency in public services"
-    },
-    {
-      title: "Digital Rights Education Initiative",
-      description: "Nationwide program to educate citizens about their digital rights and privacy",
-      year: "2021",
-      impact: "Reached over 50,000 citizens through workshops and online resources"
-    },
-    {
-      title: "Sustainable Smart Cities Blueprint",
-      description: "Framework for integrating AI and sustainability in urban development",
-      year: "2020",
-      impact: "Implemented in 2 major metropolitan areas, reducing energy consumption by 15%"
+      title: "Decarbonization of India's Secondary Steel Sector",
+      description: "In collaboration with UNDP and the Ministry of Steel, NAILS Society played a pivotal role in developing a strategic project to decarbonize India’s secondary steel sector. The initiative emphasizes promoting low-carbon technologies, pilot testing Best Available Technologies (BAT), and enhancing capacity building for small and medium-scale steel producers. It also supports policy development, stakeholder engagement, and knowledge sharing.",
+      year: "2025",
+      impact: "This achievement advances India’s commitment to achieving Net Zero Emissions by 2070 and meeting global environmental standards, such as the Carbon Border Adjustment Mechanism (CBAM). It represents a major step toward a more sustainable and competitive steel industry in India."
     }
   ],
-  internationalProjects: [
+  upcomingProjects: [
     {
-      title: "Global AI Governance Coalition",
-      description: "International partnership to develop cross-border AI governance standards",
-      year: "2022",
-      impact: "Participation from 15 countries, resulting in draft international guidelines"
+      title: "Project with UNDP on Distributed Renewable Energy for Livelihoods",
+      description: "The Network for AI, Legal, and Sustainable Solutions Society is collaborating with UNDP to develop a project proposal for the Deployment of Distributed Renewable Energy (DRE) for Livelihoods in Mizoram. The initiative aims to enhance energy access and promote sustainable livelihoods for both refugee and host communities. It focuses on identifying suitable DRE applications, supporting capacity building for operation and maintenance, and enabling business development for sustainable income generation.",
+      year: "2025",
+      impact: "Participation from 15 countries, resulting in draft international guidelinesThis project advances clean energy adoption, strengthens social resilience, and fosters inclusive economic growth. By addressing energy availability challenges, the initiative supports global sustainability goals and improves the quality of life for vulnerable communities."
     },
     {
-      title: "Tech for Climate Action",
-      description: "Deployment of AI solutions for climate monitoring in developing nations",
-      year: "2021",
-      impact: "Implemented in 5 countries, improving climate data collection by 40%"
+      title: "Upcoming Project with UNIDO",
+      description: "Deployment of AI solutions for climate monitoring in developing nationsNAILS Society, in collaboration with Deloitte, successfully submitted a proposal to UNIDO for the “Development of a Roadmap towards Inclusive and Green Transformation of the Textile Manufacturing Sector in India.” This initiative focuses on developing a comprehensive roadmap that integrates low-carbon technologies, resource efficiency, and ESG considerations. The collaboration leverages expertise in energy, chemicals, and textile technologies to provide strategic insights, stakeholder engagement, and policy recommendations.",
+      year: "2025",
+      impact: "This achievement strengthens NAILS Society’s role in fostering sustainable industrial transformation. It supports the transition to a greener and more inclusive textile industry in India while aligning with global sustainability goals."
     },
     {
-      title: "Digital Inclusion for Rural Communities",
-      description: "Program to bridge the digital divide in underserved rural areas globally",
-      year: "2020",
-      impact: "Connected 30 remote communities to digital resources and training"
+      title: "Upcoming Project with PCI: Feasibility Study for Solarization of Micro Enterprises",
+      description: "The Network for AI, Legal, and Sustainable Solutions Society is collaborating with PCI India to conduct a feasibility study on solarizing micro-enterprises in Jagatsinghpur district, Odisha. The project will assess the solarization potential for rice mills, flour and spice mills, and paper plate-making enterprises. It will involve technical feasibility evaluations, energy requirement analysis, cost-benefit assessments, and financial modeling to create Detailed Project Reports (DPRs) for each enterprise.",
+      year: "2025",
+      impact: "This initiative aims to enhance energy efficiency, reduce greenhouse gas emissions, and promote clean energy adoption in rural enterprises. By supporting this project, the society is contributing to India's sustainability and climate action goals."
     }
   ],
   donors: [
