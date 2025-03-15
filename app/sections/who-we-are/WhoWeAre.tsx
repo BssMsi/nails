@@ -4,13 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
 import SvgMaskEffect from "./SvgMaskEffect";
-import TextRevealCard from "./TextRevealCard";
 import AppleCardsCarousel from "./AppleCardsCarousel";
 import FocusCards from "./FocusCards";
 import ParallaxScroll from "./ParallaxScroll";
 import { TeamCarousel } from "@/app/components/TeamCarousel";
 import { Objectives } from "@/app/components/Objectives";
 import { AboutSociety } from "@/app/components/AboutSociety";
+import { ScopeOfWork } from "@/app/components/ScopeOfWork";
+import { Purpose } from "@/app/components/Purpose";
 
 const WhoWeAre = () => {
   return (
@@ -37,40 +38,23 @@ const WhoWeAre = () => {
         </motion.h2>
 
         {/* Purpose with SVG Mask Effect */}
-        <div className="mb-16">
+        <Purpose />
+        {/* <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 text-center">Purpose</h3>
           <SvgMaskEffect
             revealText={NAILS_DATA.organization.purpose}
             className="max-w-4xl mx-auto"
           />
-        </div>
+        </div> */}
 
         {/* Objectives with Text Generate Effect */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Objectives</h3>
-          <div className="max-w-4xl mx-auto">
-            <Objectives objectives={NAILS_DATA.organization.objectives} />
-          </div>
-        </div>
+        <Objectives objectives={NAILS_DATA.organization.objectives} />
 
         {/* About Society with Text Generate Effect */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-6 text-center">About Society</h3>
-          <div className="max-w-4xl mx-auto">
-            <AboutSociety about={NAILS_DATA.organization.aboutSociety} />
-          </div>
-        </div>
+        <AboutSociety about={NAILS_DATA.organization.aboutSociety} />
 
         {/* Scope of Work with Text Reveal Card */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Scope of Work</h3>
-          <div className="flex justify-center">
-            <TextRevealCard
-              text={NAILS_DATA.organization.scopeOfWork.join(" • ")}
-              className="max-w-4xl"
-            />
-          </div>
-        </div>
+        <ScopeOfWork scopes={NAILS_DATA.organization.scopeOfWork} />
       </div>
 
       {/* Founding Members Section */}

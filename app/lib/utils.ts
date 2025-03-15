@@ -7,7 +7,16 @@ export function cn(...inputs: ClassValue[]) {
 
 export const NAILS_DATA = {
   organization: {
-    purpose: "The Network for AI, Legal, and Sustainable Solutions Society stands as a pioneering platform that brings together visionary professionals, insightful researchers, and influential thought leaders, all united in the mission to advance artificial intelligence, enhance legal frameworks, and promote sustainable solutions. Our society cultivates an environment of collaboration, innovation, and knowledge sharing, actively addressing the pressing challenges that confront us in these critical areas.As a registered society, we are dedicated to bridging the gaps between technology, policy, and sustainability by forging meaningful connections with institutions, industries, and communities. Our diverse membership comprises experts in AI, legal research, environmental governance, and corporate social responsibility, all passionately committed to driving positive change and making a lasting impact on society. Join us as we work together to create a better future for all.",
+    purpose: [
+      "The Network for AI, Legal, and Sustainable Solutions Society is dedicated to advancing responsible Artificial Intelligence (AI), legal research, and sustainability by leveraging insights from government agencies, NGOs, industry experts, and academic institutions. Our purpose is to:",
+      "• Promote environmental sustainability and regulatory compliance by staying informed on evolving policies and best practices.",
+      "• Support social and environmental initiatives by engaging with NGOs and community organizations working towards sustainable development.",
+      "• Encourage ethical AI adoption and ESG (Environmental, Social, and Governance) compliance by learning from responsible private sector enterprises.",
+      "• Stay at the forefront of AI research and legal studies through knowledge exchange with universities and research institutions.",
+      "• Support corporate social responsibility initiatives.",
+      "• Align with global and national best practices in sustainability, legal frameworks, and technology policies to create a meaningful impact.",
+      "While we do not have formal collaborations, we actively engage with experts to ensure our initiatives are well-informed, effective, and aligned with emerging trends.",      
+    ],
     objectives: [
       "Promoting Research & Development – Encouraging innovation and research in AI, legal studies, and sustainability to enhance the quality of life and drive positive societal impact. ",
       "Knowledge Dissemination – Collecting, publishing, and sharing information through books, journals, documentation centers, and digital platforms to create awareness and foster education.",
@@ -26,12 +35,39 @@ export const NAILS_DATA = {
       "Join us in our mission to create a more informed, responsible, and sustainable future through AI, legal innovation, and environmental solutions.",
     ],
     scopeOfWork: [
-      "AI Ethics and Governance",
-      "Legal Tech Solutions",
-      "Sustainable Development",
-      "Digital Rights and Privacy",
-      "Technology Policy Advocacy",
-      "Community Empowerment through Technology"
+      {
+        title: "Sustainable Solutions & Environmental Initiatives",
+        description: [
+          "Promote sustainable practices and renewable energy adoption.",
+          "Conduct environmental impact assessments and sustainability audits.",
+          "Offer carbon, water, and waste footprint accounting. ",
+          "Support circular economy principles and green technology adoption.",
+        ],
+        text: "Sustainable",
+        revealText: "Environmental" // This text appears on hover
+      },
+      {
+        title: "Corporate Social Responsibility (CSR) Advisory & Implementation",
+        description: [
+          "Develop and implement CSR programs aligned with sustainability goals.",
+          "Provide ESG consulting, reporting, and compliance support.",
+          "Conduct CSR training and capacity-building initiatives.",
+          "Foster partnerships between corporations and community organizations.",
+        ],
+        text: "CSR",
+        revealText: "Social" // This text appears on hover
+      },
+      {
+        title: "Participation in UN & World Bank Projects",
+        description: [
+          "Align with UN Sustainable Development Goals (SDGs).",
+          "Contribute to World Bank-funded sustainability programs.",
+          "Offer expertise in climate adaptation and sustainable infrastructure.",
+          "Support policy advisory, capacity building, and impact assessments.",
+        ],
+        text: "Net Zero",
+        revealText: "Governance" // This text appears on hover
+      },
     ]
   },
   foundingMembers: [
