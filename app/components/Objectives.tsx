@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { TextGenerateEffect } from "./TextGenerateEffect";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export const Objectives = ({ objectives }: { objectives: string[] }) => {
   return (

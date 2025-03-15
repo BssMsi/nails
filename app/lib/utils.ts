@@ -254,64 +254,28 @@ export const NAILS_DATA = {
         journal: "Journal of AI Ethics",
         year: "2023",
         link: "#",
-        image: "/images/pub1.jpg"
       },
       {
-        title: "Legal Frameworks for Emerging Technologies",
-        author: "Prof. Michael Chen",
-        journal: "Technology Law Review",
-        year: "2022",
+        title: "Algorithmic Fairness: Challenges and Solutions",
+        author: "Dr. Elena Rodriguez",
+        journal: "Journal of AI Ethics",
+        year: "2023",
         link: "#",
-        image: "/images/pub2.jpg"
       },
       {
-        title: "AI and Climate Change Mitigation",
-        author: "Dr. Sarah Patel",
-        journal: "Sustainable Technology Journal",
-        year: "2022",
+        title: "Algorithmic Fairness: Challenges and Solutions",
+        author: "Dr. Elena Rodriguez",
+        journal: "Journal of AI Ethics",
+        year: "2023",
         link: "#",
-        image: "/images/pub3.jpg"
       },
       {
-        title: "Privacy-Preserving AI Systems",
-        author: "Dr. Priya Singh",
-        journal: "Digital Privacy Quarterly",
-        year: "2021",
+        title: "Algorithmic Fairness: Challenges and Solutions",
+        author: "Dr. Elena Rodriguez",
+        journal: "Journal of AI Ethics",
+        year: "2023",
         link: "#",
-        image: "/images/pub4.jpg"
       },
-      {
-        title: "Ethical Considerations in Automated Decision Making",
-        author: "Dr. Aisha Johnson",
-        journal: "AI Governance Review",
-        year: "2021",
-        link: "#",
-        image: "/images/pub5.jpg"
-      },
-      {
-        title: "Technology Policy for Developing Nations",
-        author: "Robert Kim",
-        journal: "International Policy Journal",
-        year: "2020",
-        link: "#",
-        image: "/images/pub6.jpg"
-      },
-      {
-        title: "Explainable AI: Methods and Importance",
-        author: "Dr. Lisa Okafor",
-        journal: "Transparent Computing",
-        year: "2020",
-        link: "#",
-        image: "/images/pub7.jpg"
-      },
-      {
-        title: "Smart Cities and Sustainability",
-        author: "Thomas Müller",
-        journal: "Urban Technology Review",
-        year: "2019",
-        link: "#",
-        image: "/images/pub8.jpg"
-      }
     ],
     photos: [
       { title: "Annual Conference 2023", image: "/images/photo1.jpg" },

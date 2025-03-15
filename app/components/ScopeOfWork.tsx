@@ -4,7 +4,7 @@ import {
   TextRevealCard,
   TextRevealCardTitle,
   TextRevealCardDescription,
-} from "./TextRevealCard";
+} from "./ui/TextRevealCard";
 
 export const ScopeOfWork = ({ scopes }: { scopes: Array<{
   title: string;

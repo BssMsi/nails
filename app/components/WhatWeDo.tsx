@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { GlareCard } from "./GlareCard";
+import { GlareCard } from "./ui/GlareCard";
 
 const whatWeDoItems = [
   {

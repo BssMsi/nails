@@ -7,7 +7,7 @@ import React, {
   useRef,
   useEffect,
 } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 const MouseEnterContext = createContext<{
   mouseX: number;

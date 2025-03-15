@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
 import Timeline from "./Timeline";
 import { WhatWeDo as WhatWeDoComponent } from "@/app/components/WhatWeDo";
-import { GlareCard } from "@/app/components/GlareCard";
+import { GlareCard } from "@/app/components/ui/GlareCard";
 const WhatWeDo = () => {
   return (
     <div className="container mx-auto px-4">
