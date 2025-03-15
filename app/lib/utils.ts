@@ -20,6 +20,7 @@ export const NAILS_DATA = {
       " Encouraging Ethical AI & Emerging Technologies – Engaging in research and discussions on the ethical use of AI, IoT, and related technologies for sustainable development.",
       "Awarding Scholarships & Grants – Recognizing and supporting scientists, engineers, entrepreneurs, and professionals who contribute to AI, legal, and sustainability advancements.",
     ],
+    aboutSociety: "The Network for AI, Legal, and Sustainable Solutions Society (NAILS) is a registered society dedicated to advancing artificial intelligence, legal frameworks, and sustainable solutions. Our society brings together professionals, researchers, and thought leaders to drive positive change and make a lasting impact on society. Join us as we work together to create a better future for all.",
     scopeOfWork: [
       "AI Ethics and Governance",
       "Legal Tech Solutions",
@@ -31,58 +32,67 @@ export const NAILS_DATA = {
   },
   foundingMembers: [
     {
+      id: 1,
       name: "Shri. Salikeri Ramachandra Vambally",
       role: "President",
       bio: "Retired Additional Controller State Accounts Department, Government of Karnataka",
-      image: "/images/member1.jpg"
+      image: "/images/srv.png"
     },
     {
+      id: 2,
       name: "Shri. Bharath Srinivas Shroff",
       role: "Vice President",
-      bio: "Software Engineer",
-      image: "/images/member2.jpg"
+      bio: "Data Scientst and Full Stack Software Engineer",
+      image: "/images/bharath.png"
     },
     {
+      id: 3,
       name: "Smt. Jayashree Maiya",
       role: "Secretary",
       bio: "Programme Associate",
-      image: "/images/member3.jpg"
+      image: "/images/jayashree.png"
     },
     {
+      id: 4,
       name: "Ms. Bhargavi Srinivas Shroff",
       role: "Joint-Secretary",
       bio: "Law Student",
-      image: "/images/member4.jpg"
+      image: "/images/bhargavi.png"
     },
     {
+      id: 5,
       name: "Smt. Annapoorna Shroff",
       role: "Treasurer",
       bio: "Consultant Former IT Professional with Tech Mahindra, Ampersand",
-      image: "/images/member5.jpg"
+      image: "/images/anu.png"
     },
     {
+      id: 6,
       name: "Shri. Srinivas Nagesha Rao Shroff, PhD",
       role: "Executive Member",
-      bio: "Formal CEO of REC-Delhi",
-      image: "/images/member6.jpg"
+      bio: "Former CEO of REC-Delhi",
+      image: "/images/sns.png"
     },
     {
+      id: 7,
       name: "Smt. Lalitha Varambally",
       role: "Executive Member",
       bio: "House Maker",
-      image: "/images/member7.jpg"
+      image: "/images/lalitha.png"
     },
     {
+      id: 8,
       name: "Smt. Srimathi H N Varambally",
       role: "Executive Member",
       bio: "House Maker",
-      image: "/images/member8.jpg"
+      image: "/images/smh.png"
     },
     {
+      id: 9,
       name: "Ms. Neha Maiya",
       role: "Executive Member",
       bio: "AI Engineering Student",
-      image: "/images/member9.jpg"
+      image: "/images/neha.png"
     }
   ],
   advisoryBoard: [

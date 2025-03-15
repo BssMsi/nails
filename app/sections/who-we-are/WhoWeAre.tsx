@@ -9,6 +9,7 @@ import TextRevealCard from "./TextRevealCard";
 import AppleCardsCarousel from "./AppleCardsCarousel";
 import FocusCards from "./FocusCards";
 import ParallaxScroll from "./ParallaxScroll";
+import { TeamCarousel } from "@/app/components/TeamCarousel";
 
 const WhoWeAre = () => {
   return (
@@ -53,6 +54,16 @@ const WhoWeAre = () => {
           </div>
         </div>
 
+        {/* About Society with Text Generate Effect */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold mb-6 text-center">About Society</h3>
+          <div className="max-w-4xl mx-auto">
+            <TextGenerateEffect
+              words={NAILS_DATA.organization.aboutSociety}
+            />
+          </div>
+        </div>
+
         {/* Scope of Work with Text Reveal Card */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 text-center">Scope of Work</h3>
@@ -76,7 +87,9 @@ const WhoWeAre = () => {
         >
           Founding Members
         </motion.h2>
-        <AppleCardsCarousel items={NAILS_DATA.foundingMembers} />
+        {/* <AppleCardsCarousel items={NAILS_DATA.foundingMembers} /> */}
+
+        <TeamCarousel teamMembers={NAILS_DATA.foundingMembers} />
       </div>
 
       {/* Advisory Board Section */}
