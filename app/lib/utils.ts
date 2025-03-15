@@ -278,11 +278,11 @@ export const NAILS_DATA = {
       },
     ],
     photos: [
-      { title: "Annual Conference 2023", image: "/images/photo1.jpg" },
-      { title: "Community Workshop Series", image: "/images/photo2.jpg" },
-      { title: "International Partnership Summit", image: "/images/photo3.jpg" },
-      { title: "AI Ethics Roundtable", image: "/images/photo4.jpg" },
-      { title: "Sustainability Hackathon", image: "/images/photo5.jpg" }
+      { title: "Annual Conference 2023", image: "/images/photos/photo1.jpg" },
+      { title: "Community Workshop Series", image: "/images/photos/photo2.jpg" },
+      { title: "International Partnership Summit", image: "/images/photos/photo3.jpg" },
+      { title: "AI Ethics Roundtable", image: "/images/photos/photo4.jpg" },
+      { title: "Sustainability Hackathon", image: "/images/photos/photo5.jpg" }
     ],
     videos: [
       { title: "Introduction to NAILS", url: "https://www.youtube.com/embed/example1", thumbnail: "/images/video1.jpg" },
