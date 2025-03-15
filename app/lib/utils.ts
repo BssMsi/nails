@@ -185,9 +185,9 @@ export const NAILS_DATA = {
   nationalProjects: [
     {
       title: "Decarbonization of India's Secondary Steel Sector",
-      description: "In collaboration with UNDP and the Ministry of Steel, NAILS Society played a pivotal role in developing a strategic project to decarbonize India’s secondary steel sector. The initiative emphasizes promoting low-carbon technologies, pilot testing Best Available Technologies (BAT), and enhancing capacity building for small and medium-scale steel producers. It also supports policy development, stakeholder engagement, and knowledge sharing.",
+      description: "In collaboration with UNDP and the Ministry of Steel, NAILS Society played a pivotal role in developing a strategic project to decarbonize India's secondary steel sector. The initiative emphasizes promoting low-carbon technologies, pilot testing Best Available Technologies (BAT), and enhancing capacity building for small and medium-scale steel producers. It also supports policy development, stakeholder engagement, and knowledge sharing.",
       year: "2025",
-      impact: "This achievement advances India’s commitment to achieving Net Zero Emissions by 2070 and meeting global environmental standards, such as the Carbon Border Adjustment Mechanism (CBAM). It represents a major step toward a more sustainable and competitive steel industry in India."
+      impact: "This achievement advances India's commitment to achieving Net Zero Emissions by 2070 and meeting global environmental standards, such as the Carbon Border Adjustment Mechanism (CBAM). It represents a major step toward a more sustainable and competitive steel industry in India."
     }
   ],
   upcomingProjects: [
@@ -199,9 +199,9 @@ export const NAILS_DATA = {
     },
     {
       title: "Upcoming Project with UNIDO",
-      description: "Deployment of AI solutions for climate monitoring in developing nationsNAILS Society, in collaboration with Deloitte, successfully submitted a proposal to UNIDO for the “Development of a Roadmap towards Inclusive and Green Transformation of the Textile Manufacturing Sector in India.” This initiative focuses on developing a comprehensive roadmap that integrates low-carbon technologies, resource efficiency, and ESG considerations. The collaboration leverages expertise in energy, chemicals, and textile technologies to provide strategic insights, stakeholder engagement, and policy recommendations.",
+      description: "Deployment of AI solutions for climate monitoring in developing nationsNAILS Society, in collaboration with Deloitte, successfully submitted a proposal to UNIDO for the Development of a Roadmap towards Inclusive and Green Transformation of the Textile Manufacturing Sector in India. This initiative focuses on developing a comprehensive roadmap that integrates low-carbon technologies, resource efficiency, and ESG considerations. The collaboration leverages expertise in energy, chemicals, and textile technologies to provide strategic insights, stakeholder engagement, and policy recommendations.",
       year: "2025",
-      impact: "This achievement strengthens NAILS Society’s role in fostering sustainable industrial transformation. It supports the transition to a greener and more inclusive textile industry in India while aligning with global sustainability goals."
+      impact: "This achievement strengthens NAILS Society's role in fostering sustainable industrial transformation. It supports the transition to a greener and more inclusive textile industry in India while aligning with global sustainability goals."
     },
     {
       title: "Upcoming Project with PCI: Feasibility Study for Solarization of Micro Enterprises",
@@ -232,19 +232,19 @@ export const NAILS_DATA = {
         title: "State of AI Ethics 2023",
         description: "Annual report on developments in AI ethics and governance",
         link: "#",
-        image: "/images/report1.jpg"
+        image: "/images/reports/ai-ethics.jpg"
       },
       {
         title: "Sustainable Technology Implementation Guide",
         description: "Framework for environmentally responsible tech deployment",
         link: "#",
-        image: "/images/report2.jpg"
+        image: "/images/reports/sustainable-tech.jpg"
       },
       {
         title: "Digital Rights in the Age of AI",
         description: "Analysis of privacy and rights challenges in the AI era",
         link: "#",
-        image: "/images/report3.jpg"
+        image: "/images/reports/digital-rights.jpg"
       }
     ],
     publications: [
