@@ -140,7 +140,8 @@ export const NAILS_DATA = {
       id: 1,
       name: "Shri. Salikeri Ramachandra Varambally",
       role: "Advisor",
-      image: "/images/srv.png"
+      image: "/images/srv.png",
+      bio: "Retired Additional Controller State Accounts Department, Government of Karnataka",
     },
   ],
   team: [
@@ -149,6 +150,36 @@ export const NAILS_DATA = {
       name: "Shri. Srinivas Nagesha Rao Shroff, PhD",
       role: "Chief Executive Officer",
       image: "/images/sns.png"
+    },
+  ],
+  whatWeDo: [
+    {
+      title: "Capacity Building & Training",
+      description: "Organizing workshops, training programs, and awareness campaigns for individuals and organizations.",
+    },
+    {
+      title: "Corporate Social Responsibility (CSR) Initiatives",
+      description: "Supporting projects related to green technology, environmental conservation, and social impact.",
+    },
+    {
+      title: "Project Management & Consulting",
+      description: "Assisting businesses and institutions in implementing AI-driven solutions and sustainability programs.",
+    },
+    {
+      title: "Monitoring & Evaluation",
+      description: "Offering services for carbon footprint assessment, ESG (Environmental, Social, and Governance) compliance, and sustainable development reporting.",
+    },
+    {
+      title: "Publications & Conferences",
+      description: "Disseminating knowledge through journals, reports, seminars, and networking events.",
+    },
+    {
+      title: "Research & Development",
+      description: "We conduct and support research in artificial intelligence, environmental sustainability, legal compliance, and emerging technologies.",
+    },
+    {
+      title: "Policy & Legal Advisory",
+      description: "Providing expert guidance on legal frameworks related to AI ethics, regulatory compliance, and sustainability.",
     },
   ],
   nationalProjects: [

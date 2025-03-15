@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
-import SvgMaskEffect from "./SvgMaskEffect";
 import AppleCardsCarousel from "./AppleCardsCarousel";
 import FocusCards from "./FocusCards";
 import ParallaxScroll from "./ParallaxScroll";

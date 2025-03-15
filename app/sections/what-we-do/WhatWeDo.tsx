@@ -4,7 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
 import Timeline from "./Timeline";
-
+import { WhatWeDo as WhatWeDoComponent } from "@/app/components/WhatWeDo";
+import { GlareCard } from "@/app/components/GlareCard";
 const WhatWeDo = () => {
   return (
     <div className="container mx-auto px-4">
@@ -17,16 +18,24 @@ const WhatWeDo = () => {
       >
         What We Do
       </motion.h1>
-     <div>Our society undertakes a range of activities to drive meaningful progress in AI, legal studies, and sustainability:
-Capacity Building & Training – Organizing workshops, training programs, and awareness campaigns for individuals and organizations.
-Corporate Social Responsibility (CSR) Initiatives – Supporting projects related to green technology, environmental conservation, and social impact.
-Project Management & Consulting – Assisting businesses and institutions in implementing AI-driven solutions and sustainability programs.
-Monitoring & Evaluation – Offering services for carbon footprint assessment, ESG (Environmental, Social, and Governance) compliance, and sustainable development reporting.
-Publications & Conferences – Disseminating knowledge through journals, reports, seminars, and networking events.
-Research & Development – We conduct and support research in artificial intelligence, environmental sustainability, legal compliance, and emerging technologies.
-Policy & Legal Advisory – Providing expert guidance on legal frameworks related to AI ethics, regulatory compliance, and sustainability.
-Our society is committed to fostering interdisciplinary collaboration, ensuring that AI innovations and legal frameworks are aligned with sustainable development goals.
-</div>
+      <div className="text-center text-gray-400 mb-16">
+        Our society undertakes a range of activities to drive meaningful progress in AI, legal studies, and sustainability:
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {NAILS_DATA.whatWeDo.map((item, index) => (
+          <GlareCard key={index} className="flex flex-col justify-between">
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-4">{item.title}</h3>
+              <p className="text-gray-400">{item.description}</p>
+            </div>
+          </GlareCard>
+        ))}
+      </div>
+      {/* TODO Use Background Overlay Card in future for videos on hover */}
+      <div className="text-center text-gray-400 mb-16 mt-8">
+        Our society is committed to fostering interdisciplinary collaboration, ensuring that AI innovations and legal frameworks are aligned with sustainable development goals.
+      </div>
       {/* National Projects Section */}
       <div id="national" className="mb-20">
         <motion.h2
@@ -58,4 +67,4 @@ Our society is committed to fostering interdisciplinary collaboration, ensuring 
   );
 };
 
-export default WhatWeDo;
+  export default WhatWeDo;
