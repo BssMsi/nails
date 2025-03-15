@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState, createContext, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
-import { cn } from "@/app/utils/cn";
+import { cn } from "../lib/utils";
 import Image from "next/image";
 
 
