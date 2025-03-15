@@ -4,8 +4,8 @@ import WhatWeDo from './sections/what-we-do/WhatWeDo';
 import Donors from './sections/donors/Donors';
 import Partners from './sections/partners/Partners';
 import Resources from './sections/resources/Resources';
-import ContactUs from './sections/contact-us/ContactUs';
 import Footer from './components/Footer';
+import { Contact } from './sections/contact-us/Contact';
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
       
       <section id="contact-us" className="py-20 bg-gray-50 dark:bg-gray-900">
-        <ContactUs />
+        <Contact />
       </section>
       
       <Footer />
