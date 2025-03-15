@@ -73,7 +73,7 @@ export const NAILS_DATA = {
   foundingMembers: [
     {
       id: 1,
-      name: "Shri. Salikeri Ramachandra Vambally",
+      name: "Shri. Salikeri Ramachandra Varambally",
       role: "President",
       bio: "Retired Additional Controller State Accounts Department, Government of Karnataka",
       image: "/images/srv.png"
@@ -137,71 +137,19 @@ export const NAILS_DATA = {
   ],
   advisoryBoard: [
     {
-      name: "Justice Maria Gonzalez",
-      role: "Legal Advisor",
-      bio: "Former Supreme Court Justice specializing in technology law",
-      image: "/images/advisor1.jpg"
+      id: 1,
+      name: "Shri. Salikeri Ramachandra Varambally",
+      role: "Advisor",
+      image: "/images/srv.png"
     },
-    {
-      name: "Dr. Hiroshi Tanaka",
-      role: "AI Ethics Advisor",
-      bio: "Pioneer in responsible AI development with multiple patents",
-      image: "/images/advisor2.jpg"
-    },
-    {
-      name: "Prof. Kwame Nkrumah",
-      role: "Policy Advisor",
-      bio: "International policy expert with focus on technology governance in developing nations",
-      image: "/images/advisor3.jpg"
-    },
-    {
-      name: "Dr. Emma Blackwell",
-      role: "Sustainability Advisor",
-      bio: "Environmental scientist specializing in technology-driven climate solutions",
-      image: "/images/advisor4.jpg"
-    }
   ],
   team: [
     {
-      name: "Raj Mehta",
-      role: "Project Manager",
-      image: "/images/team1.jpg"
+      id: 6,
+      name: "Shri. Srinivas Nagesha Rao Shroff, PhD",
+      role: "Chief Executive Officer",
+      image: "/images/sns.png"
     },
-    {
-      name: "Sophia Lee",
-      role: "AI Researcher",
-      image: "/images/team2.jpg"
-    },
-    {
-      name: "David Okonkwo",
-      role: "Legal Specialist",
-      image: "/images/team3.jpg"
-    },
-    {
-      name: "Maria Santos",
-      role: "Sustainability Coordinator",
-      image: "/images/team4.jpg"
-    },
-    {
-      name: "Ahmed Hassan",
-      role: "Technology Officer",
-      image: "/images/team5.jpg"
-    },
-    {
-      name: "Leila Kim",
-      role: "Community Outreach",
-      image: "/images/team6.jpg"
-    },
-    {
-      name: "Carlos Mendez",
-      role: "Policy Analyst",
-      image: "/images/team7.jpg"
-    },
-    {
-      name: "Fatima Al-Farsi",
-      role: "Education Specialist",
-      image: "/images/team8.jpg"
-    }
   ],
   nationalProjects: [
     {
@@ -232,20 +180,20 @@ export const NAILS_DATA = {
     }
   ],
   donors: [
-    { name: "Global Technology Foundation", logo: "/images/donor1.png" },
-    { name: "Sustainable Future Initiative", logo: "/images/donor2.png" },
-    { name: "Digital Rights Fund", logo: "/images/donor3.png" },
-    { name: "AI for Good Foundation", logo: "/images/donor4.png" },
-    { name: "Green Tech Alliance", logo: "/images/donor5.png" },
-    { name: "International Development Bank", logo: "/images/donor6.png" }
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
   ],
   partners: [
-    { name: "United Nations Development Programme", logo: "/images/partner1.png" },
-    { name: "World Economic Forum", logo: "/images/partner2.png" },
-    { name: "National University Research Center", logo: "/images/partner3.png" },
-    { name: "International AI Ethics Institute", logo: "/images/partner4.png" },
-    { name: "Global Sustainability Network", logo: "/images/partner5.png" },
-    { name: "Digital Rights Watch", logo: "/images/partner6.png" }
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
+    { name: "Placeholder", logo: "/images/partner.png" },
   ],
   resources: {
     reports: [
