@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../lib/utils";
+import Image from "next/image";
 
 const FloatingNavbar = () => {
   const [activeSection, setActiveSection] = useState<string>("who-we-are");
@@ -53,34 +54,51 @@ const FloatingNavbar = () => {
       >
         <nav
           className={cn(
-            "px-4 py-2 rounded-full flex items-center justify-center space-x-4 bg-white/80 dark:bg-black/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 shadow-lg",
+            "px-6 py-2 rounded-full flex items-center justify-between space-x-4 bg-white/80 dark:bg-black/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 shadow-lg",
             isScrolled ? "w-auto" : "w-auto"
           )}
         >
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={cn(
-                "relative px-4 py-2 rounded-full text-sm font-medium transition-colors",
-                activeSection === item.href.substring(1)
-                  ? "text-white"
-                  : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              )}
-            >
-              {activeSection === item.href.substring(1) && (
-                <motion.div
-                  layoutId="activeSection"
-                  className="absolute inset-0 bg-primary rounded-full"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                />
-              )}
-              <span className="relative z-10">{item.name}</span>
-            </a>
-          ))}
+          {/* Logo and Company Name */}
+          <div className="flex items-center gap-3 mr-6">
+            <Image
+              src="/logo.png"
+              alt="NAILS Society Logo"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
+            <span className="text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 whitespace-nowrap">
+              NAILS Society
+            </span>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="flex items-center space-x-4">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={cn(
+                  "relative px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                  activeSection === item.href.substring(1)
+                    ? "text-white"
+                    : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                )}
+              >
+                {activeSection === item.href.substring(1) && (
+                  <motion.div
+                    layoutId="activeSection"
+                    className="absolute inset-0 bg-primary rounded-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                  />
+                )}
+                <span className="relative z-10">{item.name}</span>
+              </a>
+            ))}
+          </div>
         </nav>
       </motion.div>
     </AnimatePresence>
