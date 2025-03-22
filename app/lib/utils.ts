@@ -195,7 +195,7 @@ export const NAILS_DATA = {
       title: "Project with UNDP on Distributed Renewable Energy for Livelihoods",
       description: "The Network for AI, Legal, and Sustainable Solutions Society is collaborating with UNDP to develop a project proposal for the Deployment of Distributed Renewable Energy (DRE) for Livelihoods in Mizoram. The initiative aims to enhance energy access and promote sustainable livelihoods for both refugee and host communities. It focuses on identifying suitable DRE applications, supporting capacity building for operation and maintenance, and enabling business development for sustainable income generation.",
       year: "2025",
-      impact: "Participation from 15 countries, resulting in draft international guidelinesThis project advances clean energy adoption, strengthens social resilience, and fosters inclusive economic growth. By addressing energy availability challenges, the initiative supports global sustainability goals and improves the quality of life for vulnerable communities."
+      impact: "Participation from 15 countries, resulting in draft international guidelines. This project advances clean energy adoption, strengthens social resilience, and fosters inclusive economic growth. By addressing energy availability challenges, the initiative supports global sustainability goals and improves the quality of life for vulnerable communities."
     },
     {
       title: "Upcoming Project with UNIDO",
@@ -223,7 +223,7 @@ export const NAILS_DATA = {
   resources: {
     reports: [
       {
-        title: "State of AI Ethics 2023",
+        title: "State of the Art Aritifical Intelligence Ethics",
         description: "Annual report on developments in AI ethics and governance",
         link: "#",
         image: "/images/reports/ai-ethics.jpg"
@@ -235,7 +235,7 @@ export const NAILS_DATA = {
         image: "/images/reports/sustainable-tech.jpg"
       },
       {
-        title: "Digital Rights in the Age of AI",
+        title: "Digital Rights in the Age of Aritifical Intelligence",
         description: "Analysis of privacy and rights challenges in the AI era",
         link: "#",
         image: "/images/reports/digital-rights.jpg"
