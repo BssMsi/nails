@@ -13,7 +13,7 @@ export const Contact = () => {
       icon: <HiOutlineOfficeBuilding className="w-6 h-6" />,
     },
     {
-      title: "Alternative Office",
+      title: "Alternative Address",
       ...NAILS_DATA.contact.alternativeAddress,
       icon: <HiOutlineOfficeBuilding className="w-6 h-6" />,
     },
