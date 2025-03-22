@@ -6,9 +6,9 @@ import { EvervaultCard } from "./ui/EvervaultCard";
 
 export const Publications = () => {
   return (
-    <div className="min-h-screen bg-[#0E0E10] md:flex md:flex-col md:items-center md:justify-center relative overflow-hidden py-8 md:py-0">
+    <div className="bg-[#0E0E10] md:flex md:flex-col md:items-center md:justify-center relative overflow-hidden py-8">
       <div className="relative w-full max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pb-8 md:pb-16">
+        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pb-8">
           Publications
         </h2>
         

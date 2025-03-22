@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
-import ContainerScrollAnimation from "./ContainerScrollAnimation";
 import Carousel from "./Carousel";
 import { Reports } from "@/app/components/Reports";
 import { Publications } from "@/app/components/Publications";
@@ -16,7 +15,7 @@ const Resources = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="text-4xl md:text-5xl font-bold text-center mb-16"
+        className="text-4xl md:text-5xl font-bold text-center mb-8"
       >
         Resources
       </motion.h1>
@@ -28,7 +27,7 @@ const Resources = () => {
       <Publications />
 
       {/* Photos Section */}
-      <div id="photos" className="mb-20">
+      <div id="photos" className="my-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

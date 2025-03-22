@@ -8,15 +8,15 @@ import { NAILS_DATA } from "../lib/utils";
 
 export const Reports = () => {
   return (
-    <div className="min-h-screen bg-[#0E0E10] flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="bg-[#0E0E10] flex flex-col items-center justify-center relative overflow-hidden">
       <div className="relative w-full max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pb-16">
+        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Reports
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
           {NAILS_DATA.resources.reports.map((report, index) => (
-            <CardContainer key={index} className="inter-var w-full" containerClassName="py-12">
+            <CardContainer key={index} className="inter-var w-full" containerClassName="py-8">
               <CardBody className="bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-[420px] rounded-xl p-6 border">
                 {report.image && (
                   <CardItem
