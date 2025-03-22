@@ -62,33 +62,33 @@ const FloatingNavbar = () => {
         isMenuOpen ? "rounded-2xl" : "rounded-full"
       )}
     >
-      <div className="flex items-center gap-3 mr-4 sm:mr-6">
+      <div className="flex items-center gap-2 mr-2 sm:mr-4">
         {mounted ? (
           <Image
             src="/logo.png"
             alt="NAILS Society Logo"
-            width={32}
-            height={32}
+            width={28}
+            height={28}
             className="object-contain"
             priority
             unoptimized
           />
         ) : (
-          <div className="w-8 h-8 bg-gray-200 dark:bg-gray-800 rounded-full" />
+          <div className="w-7 h-7 bg-gray-200 dark:bg-gray-800 rounded-full" />
         )}
-        <span className="text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 whitespace-nowrap">
+        <span className="text-sm md:text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-neutral-50 to-neutral-400 whitespace-nowrap">
           NAILS Society
         </span>
       </div>
 
       {/* Desktop navigation */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-1 lg:space-x-2 xl:space-x-4">
         {navItems.map((item) => (
           <a
             key={item.name}
             href={item.href}
             className={cn(
-              "relative px-4 py-2 rounded-full text-sm font-medium transition-colors",
+              "relative px-2 lg:px-3 xl:px-4 py-1 lg:py-2 rounded-full text-xs lg:text-sm font-medium transition-colors whitespace-nowrap",
               activeSection === item.href.substring(1)
                 ? "text-white"
                 : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
@@ -126,7 +126,7 @@ const FloatingNavbar = () => {
 
   return (
     <div className="fixed top-6 inset-x-0 z-50 flex flex-col items-center">
-      <div className="w-[95%] max-w-3xl">
+      <div className="w-[95%] max-w-5xl xl:max-w-6xl">
         {navContent}
         
         {/* Mobile dropdown menu */}

@@ -8,11 +8,13 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
+  staggerDelay = 0.1,
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
+  staggerDelay?: number;
 }) => {
   const [scope, animate] = useAnimate();
   const elementRef = useRef<HTMLDivElement>(null);
@@ -32,7 +34,7 @@ export const TextGenerateEffect = ({
               },
               {
                 duration: duration ? duration : 1,
-                delay: stagger(0.2),
+                delay: stagger(staggerDelay),
               }
             );
             hasAnimated.current = true;
@@ -51,7 +53,7 @@ export const TextGenerateEffect = ({
     }
 
     return () => observer.disconnect();
-  }, [scope.current, animate, duration, filter]);
+  }, [scope.current, animate, duration, filter, staggerDelay]);
 
   const renderWords = () => {
     return (

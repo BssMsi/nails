@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
-import AppleCardsCarousel from "./AppleCardsCarousel";
 import FocusCards from "./FocusCards";
 import ParallaxScroll from "./ParallaxScroll";
 import { TeamCarousel } from "@/app/components/TeamCarousel";
@@ -19,19 +18,19 @@ const WhoWeAre = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl md:text-5xl font-bold text-center mb-16"
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center my-8 md:mb-16"
       >
         Who We Are
       </motion.h1>
 
       {/* Organization Section */}
-      <div id="organization" className="mb-20">
+      <div id="organization" className="mb-12 md:mb-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-12"
         >
           Organization
         </motion.h2>
@@ -57,13 +56,13 @@ const WhoWeAre = () => {
       </div>
 
       {/* Founding Members Section */}
-      <div id="founding-members" className="mb-20">
+      <div id="founding-members" className="mb-12 md:mb-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-12"
         >
           Founding Members
         </motion.h2>
@@ -73,13 +72,13 @@ const WhoWeAre = () => {
       </div>
 
       {/* Advisory Board Section */}
-      <div id="advisory-board" className="mb-20">
+      <div id="advisory-board" className="mb-12 md:mb-20">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-12"
         >
           Advisory Board
         </motion.h2>
@@ -87,13 +86,13 @@ const WhoWeAre = () => {
       </div>
 
       {/* Team Section */}
-      <div id="team">
+      <div id="team" className="pb-10 md:pb-0">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-12"
+          className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-12"
         >
           Team
         </motion.h2>
