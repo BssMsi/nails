@@ -33,7 +33,7 @@ export const ScopeOfWork = ({ scopes }: { scopes: Array<{
               <TextRevealCardDescription>
                 <ul className="list-disc space-y-2 px-2">
                   {scope.description.map((item, idx) => (
-                    <li key={idx} className="text-[#a9a9a9] text-lg md:text-xl lg:text-2xl ml-5 pl-1">
+                    <li key={idx} className="text-[#a9a9a9] text-md lg:text-lg ml-5 pl-1">
                       <span className="block">{item}</span>
                     </li>
                   ))}
@@ -43,7 +43,7 @@ export const ScopeOfWork = ({ scopes }: { scopes: Array<{
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center py-8 mt-4 text-center text-[#a9a9a9] text-lg md:text-xl lg:text-2xl px-4 max-w-3xl mx-auto relative z-20">
+      <div className="flex justify-center items-center pt-8 mt-4 text-center text-[#a9a9a9] text-md px-4 max-w-3xl mx-auto relative z-20">
         By integrating technology, law, and sustainability, the society aims to drive positive environmental and social change globally.
       </div>
     </div>

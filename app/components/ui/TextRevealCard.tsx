@@ -121,7 +121,7 @@ export const TextRevealCard = ({
     >
       <div className="flex-1 mb-4">{children}</div>
 
-      <div className="h-40 relative flex items-center justify-center overflow-hidden">
+      <div className="relative flex items-center justify-center overflow-hidden">
         <motion.div
           style={{
             width: "100%",
@@ -137,7 +137,7 @@ export const TextRevealCard = ({
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-2xl md:text-[4rem] lg:text-[5rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-center w-full"
+            className="text-lg py-5 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-center w-full"
           >
             {revealText}
           </p>
@@ -149,11 +149,11 @@ export const TextRevealCard = ({
             opacity: widthPercentage > 0 ? 1 : 0,
           }}
           transition={{ duration: isMouseOver ? 0 : 0.4 }}
-          className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
+          className="w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
         ></motion.div>
 
         <div className="overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] w-full">
-          <p className="text-2xl md:text-[4rem] lg:text-[5rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238] text-center w-full">
+          <p className="text-lg py-5 font-bold bg-clip-text text-transparent bg-[#323238] text-center w-full">
             {text}
           </p>
           <MemoizedStars />
@@ -171,7 +171,7 @@ export const TextRevealCardTitle = ({
   className?: string;
 }) => {
   return (
-    <h2 className={twMerge("text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center break-words hyphens-auto", className)}>
+    <h2 className={twMerge("text-white text-lg lg:text-xl font-bold mb-4 text-center break-words hyphens-auto", className)}>
       {children}
     </h2>
   );
@@ -185,7 +185,7 @@ export const TextRevealCardDescription = ({
   className?: string;
 }) => {
   return (
-    <div className={twMerge("text-[#a9a9a9] text-lg md:text-xl lg:text-2xl break-words w-full", className)}>
+    <div className={twMerge("text-[#a9a9a9] text-md lg:text-lg break-words w-full", className)}>
       {children}
     </div>
   );

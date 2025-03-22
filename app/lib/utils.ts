@@ -47,7 +47,7 @@ export const NAILS_DATA = {
         revealText: "Environmental" // This text appears on hover
       },
       {
-        title: "Corporate Social Responsibility (CSR) Advisory & Implementation",
+        title: "CSR Advisory & Implementation",
         description: [
           "Develop and implement CSR programs aligned with sustainability goals.",
           "Provide ESG consulting, reporting, and compliance support.",
