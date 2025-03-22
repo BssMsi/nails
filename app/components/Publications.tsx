@@ -6,13 +6,13 @@ import { EvervaultCard } from "./ui/EvervaultCard";
 
 export const Publications = () => {
   return (
-    <div className="min-h-screen bg-[#0E0E10] flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-[#0E0E10] md:flex md:flex-col md:items-center md:justify-center relative overflow-hidden py-8 md:py-0">
       <div className="relative w-full max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pb-16">
+        <h2 className="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 pb-8 md:pb-16">
           Publications
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
           {NAILS_DATA.resources.publications.map((publication, index) => (
             <a
               key={index}
@@ -21,8 +21,9 @@ export const Publications = () => {
             >
               <EvervaultCard
                 text={publication.title}
-                subText={`${publication.author} • ${publication.journal} • ${publication.year}`}
-                className="w-full aspect-[4/5]"
+                subText={`${publication.year} • ${publication.journal}`}
+                author={publication.author}
+                className="w-full md:aspect-[4/5]"
               />
             </a>
           ))}
