@@ -155,10 +155,10 @@ export const NAILS_DATA = {
   whatWeDo: [
     {
       title: "Capacity Building & Training",
-      description: "Organizing workshops, training programs, and awareness campaigns for individuals and organizations.",
+      description: "Organizing workshops, training, and awareness campaigns for individuals and organizations.",
     },
     {
-      title: "Corporate Social Responsibility (CSR) Initiatives",
+      title: "CSR Initiatives",
       description: "Supporting projects related to green technology, environmental conservation, and social impact.",
     },
     {
@@ -167,7 +167,7 @@ export const NAILS_DATA = {
     },
     {
       title: "Monitoring & Evaluation",
-      description: "Offering services for carbon footprint assessment, ESG (Environmental, Social, and Governance) compliance, and sustainable development reporting.",
+      description: "Offering services for carbon footprint assessment, ESG compliance, and sustainable development reporting.",
     },
     {
       title: "Publications & Conferences",
@@ -214,14 +214,8 @@ export const NAILS_DATA = {
     { name: "Placeholder", logo: "/images/partner.png" },
     { name: "Placeholder", logo: "/images/partner.png" },
     { name: "Placeholder", logo: "/images/partner.png" },
-    { name: "Placeholder", logo: "/images/partner.png" },
-    { name: "Placeholder", logo: "/images/partner.png" },
-    { name: "Placeholder", logo: "/images/partner.png" },
   ],
   partners: [
-    { name: "Placeholder", logo: "/images/partner.png" },
-    { name: "Placeholder", logo: "/images/partner.png" },
-    { name: "Placeholder", logo: "/images/partner.png" },
     { name: "Placeholder", logo: "/images/partner.png" },
     { name: "Placeholder", logo: "/images/partner.png" },
     { name: "Placeholder", logo: "/images/partner.png" },

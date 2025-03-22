@@ -3,9 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NAILS_DATA } from "../../lib/utils";
-import Timeline from "./Timeline";
-import { WhatWeDo as WhatWeDoComponent } from "@/app/components/WhatWeDo";
 import { GlareCard } from "@/app/components/ui/GlareCard";
+import AceTimeline from "./AceTimeline";
 const WhatWeDo = () => {
   return (
     <div className="container mx-auto px-4">
@@ -26,8 +25,8 @@ const WhatWeDo = () => {
         {NAILS_DATA.whatWeDo.map((item, index) => (
           <GlareCard key={index} className="flex flex-col justify-between">
             <div>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-4">{item.title}</h3>
-              <p className="text-gray-400 text-lg md:text-xl lg:text-2xl">{item.description}</p>
+              <h3 className="text-lg lg:text-xl font-semibold text-white mb-4">{item.title}</h3>
+              <p className="text-gray-400 text-md lg:text-lg">{item.description}</p>
             </div>
           </GlareCard>
         ))}
@@ -47,7 +46,7 @@ const WhatWeDo = () => {
         >
           National Projects
         </motion.h2>
-        <Timeline items={NAILS_DATA.nationalProjects} />
+        <AceTimeline data={NAILS_DATA.nationalProjects} />
       </div>
 
       {/* International Projects Section */}
@@ -61,7 +60,7 @@ const WhatWeDo = () => {
         >
             Upcoming Projects
         </motion.h2>
-        <Timeline items={NAILS_DATA.upcomingProjects} />
+        <AceTimeline data={NAILS_DATA.upcomingProjects} />
       </div>
     </div>
   );
